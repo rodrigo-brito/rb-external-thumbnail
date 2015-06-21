@@ -1,6 +1,8 @@
 <?php
 /**
  * RB_Thumbnail_Metabox class.
+ * Original class from The Odin Framework
+ * Project URI: https://github.com/wpbrasil/odin
  *
  * Built Metaboxs.
  *
