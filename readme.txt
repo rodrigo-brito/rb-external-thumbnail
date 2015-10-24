@@ -1,6 +1,6 @@
 === RB External Thumbnail ===
 Contributors: rodrigo73
-Tags: thumbnail, miniature, custom, external
+Tags: thumbnail, custom, external
 Requires at least: 3.0.1
 Tested up to: 3.4
 Stable tag: 4.3
@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-In the area of insertion posts, new field is enabled which allows the use of an external image for a thumbnail configuration.
+Enable thumbnail field to external images. You can use external images as thumbnails in the blog posts. A simple and practical way.
 
 == Installation ==
 
@@ -19,4 +19,7 @@ In the area of insertion posts, new field is enabled which allows the use of an 
 == Changelog ==
 
 = 1.0 =
-* External thumbnail for posts
+* External thumbnail for posts.
+= 1.1 =
+* Enable thumbnail preview.
+* Enable has_post_thumbnail() for external images.

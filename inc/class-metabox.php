@@ -196,7 +196,7 @@ class RB_Thumbnail_Metabox {
 
 		switch ( $type ) {
 			case 'text':
-				$this->field_input( $id, $current, array_merge( array( 'class' => 'regular-text' ), $attrs ) );
+				$this->field_input( $id, $current, array_merge( array( 'class' => 'form-input-tip' ), $attrs ) );
 				break;
 			case 'input':
 				$this->field_input( $id, $current, $attrs );
