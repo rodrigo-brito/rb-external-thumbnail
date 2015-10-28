@@ -75,12 +75,9 @@ function rb_has_post_thumbnail($metadata, $object_id, $meta_key, $single){
         $url_thumbnail_external = get_post_meta( $post_id ,'thumbnail_external', true );
         if( !empty($url_thumbnail_external) ){
             return true;
-        }else{
-            return $metadata;
         }
-    }else{
-        return $metadata;
     }
+    return $metadata;
 }
 
 ?>
