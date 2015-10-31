@@ -6,33 +6,47 @@
  * Author: Rodrigo Brito
  * Version: 1.1
  * Author URI: http://www.rodrigobrito.net/
+ * Text Domain: rb-external-thumbnail
+ * Domain Path: /languages/
  */
 
 require_once plugin_dir_path( __FILE__ ).'inc/class-metabox.php';
 
 register_deactivation_hook(__FILE__, 'rb_thumbnail_uninstall');
 
+/**
+ * Load textdomain
+ */
+function rb_external_thumbnail_load_textdomain() {
+	load_plugin_textdomain( 'rb-external-thumbnail', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
 
-$thumbnail_metabox = new RB_Thumbnail_Metabox(
-    'thumbnail_external',
-    'Thumbnail External (URL)',
-    'post',
-    'side',
-    'low'
-);
+add_action( 'plugins_loaded', 'rb_external_thumbnail_load_textdomain' );
 
-$thumbnail_metabox->set_fields(
-    array(
-        array(
-            'id'          => 'thumbnail_external',
-            'label'       => 'Image URL',
-            'type'        => 'text',
-            'attributes'  => array(
-                'placeholder' => __( 'Ex: http://www.externalsite.com/image.jpg' )
-            )
-        )
-    )
-);
+function rb_external_thumbnail_init_metabox() {
+	$thumbnail_metabox = new RB_Thumbnail_Metabox(
+	    'thumbnail_external',
+	    __( 'Thumbnail External (URL)', 'rb-external-thumbnail' ),
+	    'post',
+	    'side',
+	    'low'
+	);
+
+	$thumbnail_metabox->set_fields(
+	    array(
+	        array(
+	            'id'          => 'thumbnail_external',
+	            'label'       => __( 'Image URL', 'rb-external-thumbnail' ),
+	            'type'        => 'text',
+	            'attributes'  => array(
+	                'placeholder' => __( 'Ex: http://www.externalsite.com/image.jpg', 'rb-external-thumbnail' )
+	            )
+	        )
+	    )
+	);
+}
+
+add_action( 'init', 'rb_external_thumbnail_init_metabox' );
 
 
 function rb_thumbnail_uninstall() {
@@ -79,5 +93,3 @@ function rb_has_post_thumbnail($metadata, $object_id, $meta_key, $single){
     }
     return $metadata;
 }
-
-?>
