@@ -86,11 +86,11 @@ class RB_Thumbnail_Metabox {
 				'odin-admin',
 				'odinAdminParams',
 				array(
-					'galleryTitle'  => __( 'Add images in gallery', 'odin' ),
-					'galleryButton' => __( 'Add in gallery', 'odin' ),
-					'galleryRemove' => __( 'Remove image', 'odin' ),
-					'uploadTitle'   => __( 'Choose a file', 'odin' ),
-					'uploadButton'  => __( 'Add file', 'odin' ),
+					'galleryTitle'  => __( 'Add images in gallery', 'rb-external-thumbnail' ),
+					'galleryButton' => __( 'Add in gallery', 'rb-external-thumbnail' ),
+					'galleryRemove' => __( 'Remove image', 'rb-external-thumbnail' ),
+					'uploadTitle'   => __( 'Choose a file', 'rb-external-thumbnail' ),
+					'uploadButton'  => __( 'Add file', 'rb-external-thumbnail' ),
 				)
 			);
 		}
@@ -405,7 +405,7 @@ class RB_Thumbnail_Metabox {
 	 * @return string          HTML of the field.
 	 */
 	protected function field_upload( $id, $current, $attrs ) {
-		echo sprintf( '<input type="text" id="%1$s" name="%1$s" value="%2$s" class="regular-text"%4$s /> <input class="button odin-upload-button" type="button" value="%3$s" />', $id, esc_url( $current ), __( 'Select file', 'odin' ), $this->build_field_attributes( $attrs ) );
+		echo sprintf( '<input type="text" id="%1$s" name="%1$s" value="%2$s" class="regular-text"%4$s /> <input class="button odin-upload-button" type="button" value="%3$s" />', $id, esc_url( $current ), __( 'Select file', 'rb-external-thumbnail' ), $this->build_field_attributes( $attrs ) );
 	}
 
 	/**
@@ -428,7 +428,7 @@ class RB_Thumbnail_Metabox {
 			$image = $image[0];
 		}
 
-		$html .= sprintf( '<input id="%1$s" name="%1$s" type="hidden" class="image" value="%2$s" /><img src="%3$s" class="preview" style="height: 150px; width: 150px;" alt="" /><input id="%1$s-button" class="button" type="button" value="%4$s" /><ul class="actions"><li><a href="#" class="delete" title="%5$s"><span class="dashicons dashicons-no"></span></a></li></ul>', $id, $current, $image, __( 'Select image', 'odin' ), __( 'Remove image', 'odin' ) );
+		$html .= sprintf( '<input id="%1$s" name="%1$s" type="hidden" class="image" value="%2$s" /><img src="%3$s" class="preview" style="height: 150px; width: 150px;" alt="" /><input id="%1$s-button" class="button" type="button" value="%4$s" /><ul class="actions"><li><a href="#" class="delete" title="%5$s"><span class="dashicons dashicons-no"></span></a></li></ul>', $id, $current, $image, __( 'Select image', 'rb-external-thumbnail' ), __( 'Remove image', 'rb-external-thumbnail' ) );
 
 		$html .= '<br class="clear" />';
 		$html .= '</div>';
@@ -456,7 +456,7 @@ class RB_Thumbnail_Metabox {
 							$html .= sprintf( '<li class="image" data-attachment_id="%1$s">%2$s<ul class="actions"><li><a href="#" class="delete" title="%3$s"><span class="dashicons dashicons-no"></span></a></li></ul></li>',
 								$attachment_id,
 								wp_get_attachment_image( $attachment_id, 'thumbnail' ),
-								__( 'Remove image', 'odin' )
+								__( 'Remove image', 'rb-external-thumbnail' )
 							);
 						}
 					}
@@ -467,7 +467,7 @@ class RB_Thumbnail_Metabox {
 			$html .= sprintf( '<input type="hidden" class="odin-gallery-field" name="%s" value="%s" />', $id, $current );
 
 			// Adds "adds images in gallery" url.
-			$html .= sprintf( '<p class="odin-gallery-add hide-if-no-js"><a href="#">%s</a></p>', __( 'Add images in gallery', 'odin' ) );
+			$html .= sprintf( '<p class="odin-gallery-add hide-if-no-js"><a href="#">%s</a></p>', __( 'Add images in gallery', 'rb-external-thumbnail' ) );
 		$html .= '</div>';
 
 		echo $html;
