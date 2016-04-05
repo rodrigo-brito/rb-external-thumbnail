@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/rodrigo-brito/rb-external-thumbnail
  * Description: External images for post thumbnail.
  * Author: Rodrigo Brito
- * Version: 1.0
+ * Version: 1.1
  * Author URI: http://www.rodrigobrito.net/
  * Text Domain: rb-external-thumbnail
  * Domain Path: /languages/
