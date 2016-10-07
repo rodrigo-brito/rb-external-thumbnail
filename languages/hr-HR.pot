@@ -56,7 +56,7 @@ msgstr "Ex: http://www.vanjskastranica.com/slika.jpg"
 
 #. Plugin Name of the plugin/theme
 msgid "RB External Thumbnail"
-msgstr "RB Vanjska sličica"
+msgstr "RB Vanjska Sličica"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/rodrigo-brito/rb-external-thumbnail"
