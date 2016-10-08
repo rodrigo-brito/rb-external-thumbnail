@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Daniel Taylor <kingorgg@gmail.com>\n"
+"Language-Team: ja_JA <LL@li.org>\n"
 
 #: inc/class-metabox.php:89 inc/class-metabox.php:470
 msgid "Add images in gallery"
