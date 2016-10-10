@@ -2,8 +2,8 @@
 Contributors: rodrigo73
 Tags: thumbnail, custom, external
 Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 1.1
+Tested up to: 4.6.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,3 +29,6 @@ Enable thumbnail field to external images. You can use external images as thumbn
 
 = 1.1 =
 * Include translation support
+
+= 1.2 =
+* Translation for other languagess
