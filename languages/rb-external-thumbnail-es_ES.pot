@@ -15,11 +15,11 @@ msgstr ""
 
 #: inc/class-metabox.php:89 inc/class-metabox.php:470
 msgid "Add images in gallery"
-msgstr "Agregar imágenes a galería"
+msgstr "Agregar imágenes a la galería"
 
 #: inc/class-metabox.php:90
 msgid "Add in gallery"
-msgstr "Agregar a galería"
+msgstr "Agregar a la galería"
 
 #: inc/class-metabox.php:91 inc/class-metabox.php:431
 #: inc/class-metabox.php:459
@@ -40,7 +40,7 @@ msgstr "Seleccione un archivo"
 
 #: inc/class-metabox.php:431
 msgid "Select image"
-msgstr "Seleccione imagen"
+msgstr "Seleccione una imagen"
 
 #: rb-external-thumbnail.php:29
 msgid "Thumbnail External (URL)"
@@ -48,7 +48,7 @@ msgstr "Imagen externa (URL)"
 
 #: rb-external-thumbnail.php:39
 msgid "Image URL"
-msgstr "URL de imagen"
+msgstr "URL de la imagen"
 
 #: rb-external-thumbnail.php:42
 msgid "Ex: http://www.externalsite.com/image.jpg"
