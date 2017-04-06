@@ -93,3 +93,26 @@ function rb_has_post_thumbnail($metadata, $object_id, $meta_key, $single){
     }
     return $metadata;
 }
+
+add_filter( 'get_post_metadata', 'rb_external_inject_thumbnail_id', 10, 4 );
+
+function rb_external_inject_thumbnail_id ( $value, $post_id, $meta_key, $single ) {
+    if ( $meta_key === '_thumbnail_id' ) {
+        $url_thumbnail_external = get_post_meta( $post_id ,'thumbnail_external', true );
+        if( !empty($url_thumbnail_external) ){
+            return "ext-" . $post_id;
+        }
+    }
+    return $value;
+}
+
+add_filter( 'wp_get_attachment_image_src', 'rb_external_attachment_image_src', 10, 4 );
+
+function rb_external_attachment_image_src( $image, $attachment_id, $size, $icon ){
+    if(isset($attachment_id) && !empty($attachment_id) && substr($attachment_id, 0, 3) === "ext"){
+        $id = substr($attachment_id, 4);
+        $thumbnail = get_post_meta( $id ,'thumbnail_external', true );
+        return Array ( $thumbnail, 0, 0, false );
+    }
+    return $image;
+}
