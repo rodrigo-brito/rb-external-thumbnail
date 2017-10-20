@@ -19,7 +19,7 @@ msgstr "Bild zur Gallery hinzufügen"
 
 #: inc/class-metabox.php:90
 msgid "Add in gallery"
-msgstr "Zur Gallery hinzufügen"
+msgstr "Zur Gallerie hinzufügen"
 
 #: inc/class-metabox.php:91 inc/class-metabox.php:431
 #: inc/class-metabox.php:459
@@ -56,7 +56,7 @@ msgstr "Ex: http://www.externeseite.com/bild.jpg"
 
 #. Plugin Name of the plugin/theme
 msgid "RB External Thumbnail"
-msgstr "RB External Thumbnail"
+msgstr "RB externes Thumbnail"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/rodrigo-brito/rb-external-thumbnail"
