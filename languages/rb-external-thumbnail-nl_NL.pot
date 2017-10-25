@@ -15,11 +15,11 @@ msgstr ""
 
 #: inc/class-metabox.php:89 inc/class-metabox.php:470
 msgid "Add images in gallery"
-msgstr "Afbeeldingen aan gallerij toevoegen"
+msgstr "Afbeeldingen aan galerij toevoegen"
 
 #: inc/class-metabox.php:90
 msgid "Add in gallery"
-msgstr "Aan gallerij toevoegen"
+msgstr "Aan galerij toevoegen"
 
 #: inc/class-metabox.php:91 inc/class-metabox.php:431
 #: inc/class-metabox.php:459
@@ -52,7 +52,7 @@ msgstr "Afbeelding URL"
 
 #: rb-external-thumbnail.php:42
 msgid "Ex: http://www.externalsite.com/image.jpg"
-msgstr "Bv: http://www.siteexterno.com/afbeelding.jpg"
+msgstr "Bv: http://www.externesite.com/afbeelding.jpg"
 
 #. Plugin Name of the plugin/theme
 msgid "RB External Thumbnail"
