@@ -15,11 +15,11 @@ msgstr ""
 
 #: inc/class-metabox.php:89 inc/class-metabox.php:470
 msgid "Add images in gallery"
-msgstr "Bild zur Gallery hinzufügen"
+msgstr "Bild zur Gellerie hinzufügen"
 
 #: inc/class-metabox.php:90
 msgid "Add in gallery"
-msgstr "Zur Gallery hinzufügen"
+msgstr "Zur Gellerie hinzufügen"
 
 #: inc/class-metabox.php:91 inc/class-metabox.php:431
 #: inc/class-metabox.php:459
@@ -44,7 +44,7 @@ msgstr "Bild auswählen"
 
 #: rb-external-thumbnail.php:29
 msgid "Thumbnail External (URL)"
-msgstr "Thumbnail extern (URL)"
+msgstr "Externes Thumbnail (URL)"
 
 #: rb-external-thumbnail.php:39
 msgid "Image URL"
@@ -64,7 +64,7 @@ msgstr "https://github.com/rodrigo-brito/rb-external-thumbnail"
 
 #. Description of the plugin/theme
 msgid "External images for post thumbnail."
-msgstr "Externes Bild für Beitrags Thumbnail."
+msgstr "Externes Bild für das Thumbnail des Beitrags."
 
 #. Author of the plugin/theme
 msgid "Rodrigo Brito"
