@@ -64,7 +64,7 @@ msgstr "https://github.com/rodrigo-brito/rb-external-thumbnail"
 
 #. Description of the plugin/theme
 msgid "External images for post thumbnail."
-msgstr "External images for post thumbnail."
+msgstr "Zdjęcia z zewnętrznego źródła jako miniatury wpisów."
 
 #. Author of the plugin/theme
 msgid "Rodrigo Brito"
