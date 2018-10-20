@@ -44,7 +44,7 @@ msgstr "اختر صورة"
 
 #: rb-external-thumbnail.php:29
 msgid "Thumbnail External (URL)"
-msgstr "Thumbnail External (URL)"
+msgstr "Thumbnail خارجي (URL)"
 
 #: rb-external-thumbnail.php:39
 msgid "Image URL"
