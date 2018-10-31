@@ -15,7 +15,7 @@ msgstr ""
 
 #: inc/class-metabox.php:89 inc/class-metabox.php:470
 msgid "Add images in gallery"
-msgstr "Bild zur Gallery hinzufügen"
+msgstr "Bild zur Gallerie hinzufügen"
 
 #: inc/class-metabox.php:90
 msgid "Add in gallery"
